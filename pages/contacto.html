@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto-Tattoo Foundation</title>
+    <link rel="icon" href="../assets/img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <section class="encabezado row">
+        <div class="col-4 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+            <img src="../assets/img/generatedtext.png" class="nombre img-fluid">
+        </div>
+        <div class="col-8 col-md-6 col-lg-4 col-xl-4 d-flex align-items-center justify-content-start">
+            <form action="archivo.php" method="post" class="col-4 col-md-4 col-lg-4 col-xl-4 d-flex align-items-end justify-content-start">
+                <img src="../assets/img/lupa.png"class="img-fluid">
+                <input class="formularios" type="search" placeholder="Busca por palabra clave">
+                <input class="button" type="submit" value="Enviar">
+            </form>
+        </div>
+            <a href="#pie de pagina" class="redes1 col-0 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center align-items-center">
+                <img src="../assets/img/redes.png" class="redes img-fluid">
+            </a>
+        <div class="logoprincipal col-0 col-md-0 col-lg-2 col-xl-2 d-flex justify-content-center align-items-center">
+            <a class="logoprincipal1" href="../index.html">
+                <img src="../assets/img/logo.png" class="img-fluid">
+            </a>
+        </div>
+    </section>
+    <section class="menu navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a href="../index.html">
+                <div class="nombre_barra">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarText" >
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+                    <li class="nav-item">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./artistas.html">Artistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./estilos.html">Estilos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./tattooshop.html">TattooShop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./concursos.html">Concursos</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="../index.html" class="logo_principal">
+                <img src="../assets/img/logo.png">
+            </a>
+        </div>
+    </section>
+    <main class="main">
+        <h1>CONTACTO</h1>
+        <h2>Este es un espacio en el que puede dejarnos sus preguntas, sugerencias, dudas o inquietudes sobre la Tattoo Foundation</h2>
+        <Form action="archivo.php" method="post" class="formulario">
+            <label for="name">Nombre</label>
+            <input class="formularios" type="text" name="name">
+            <label for="apellidos">Apellidos</label>
+            <input class="formularios" type="text" name="apellidos">
+            <label for="email">E-mail</label>
+            <input class="formularios" type="email" name="email">
+            <label for="direccion">Dirección</label>
+            <input class="formularios" type="text" name="direccion">
+            <label for="telefono">Teléfono</label>
+            <input class="formularios" type="tel" name="telefono">
+            <label for="opinion">Ingrese su opinion</label>
+            <textarea class="formularios" name="opinion"></textarea>
+            <label for="estilos">Estilo de su preferencia</label>
+            <select name="estilos">
+                <option value="tradicional">Tradicional</option>
+                <option value="realismo">Realismo</option>
+                <option value="nueva_escuela">Nueva Escuela</option>
+                <option value="banco_y_negro">Black & Grey</option>
+                <option value="japones_tradicional">Japones Tradicional</option>
+                <option value="caligrafia">Caligrafía</option>
+                <option value="geometricos">Geométricos</option>
+                <option value="poligonales">Poligonales</option>
+                <option value="puntillismo">Puntillismo</option>
+                <option value="trash_polka">Trash Polka</option>
+                <option value="acuarelas">Acuarelas</option>
+                <option value="tribal">Tribal</option>
+            </select>
+            <label class="option">Acepta la notificación por correo electrónico</label>
+            <label for="notificacion_por_correo">Si</label>
+            <input type="radio" name="notificacion_por_correo" value="si">
+            <label for="notificacion_por_correo">No</label>
+            <input type="radio" name="notificacion_por_correo" value="no">        
+            <label class="option">Sexo</label>
+            <label for="Sexo">Hombre</label>
+            <input type="radio" name="Sexo" value="Hombre">
+            <label for="Sexo">Mujer</label>
+            <input type="radio" name="Sexo" value="Mujer">
+            <label class="option">Acepta Términos y condiciones</label>
+            <label for="terminos_y_condiciones">Acepto</label>
+            <input class="space"type="checkbox" name="terminos_y_condiciones" value="acepto"> 
+            <input class="button" type="submit" value="Enviar">
+            <input class="button" type="reset" Value="Refrescar">
+        </Form>
+    </main>
+    <footer id="pie de pagina" class="row">
+        <div>
+            <p>Recuerde Seguirnos en todas nuestras redes sociales</p>
+            <a href="https://es-la.facebook.com/enespanol/">
+                <img src="../assets/img/icon-face.png">@TattooFoundation
+            </a>
+            <a href="https://www.instagram.com/accounts/login/">
+                <img src="../assets/img/icon_tw.png">@TattooFoundation
+            </a>
+            <a href="https://twitter.com/login?lang=es">
+                <img src="../assets/img/instagram_icon.png">@TattooFoundation
+            </a>
+            <p>
+                <img src="../assets/img/copyright-logo.png">2022 TattooFoundation Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
