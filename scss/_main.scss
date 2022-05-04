@@ -1,0 +1,35 @@
+.main{
+    padding: 0;
+    margin: 0;
+    .inicio{
+        display: flex;
+        flex-wrap: wrap;
+        align-content:space-around;
+        justify-content: center;
+        div{
+            width: 500px;
+            height: 340px;
+            h2{
+                margin-top: 100px;
+            }
+        }
+    }
+    .texto_estilos{
+        width: 700px;
+        margin: 50px;
+    }
+    .concurso{
+        height: 900px;
+        width: 410px;
+        background-color: $colorprincipal;
+        font-size: 20px;
+        margin: 25px;
+        border-radius: 15px;
+        padding: 10px;
+        color:$colorfondo;
+        box-shadow: 5px 10px 10px 1px rgb(58, 56, 56);
+    }
+    h1{
+        margin-right:0;
+    }
+}

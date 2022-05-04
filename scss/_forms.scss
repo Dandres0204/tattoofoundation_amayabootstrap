@@ -1,0 +1,30 @@
+
+.formularios{
+    background-color: $colorform;
+}
+.button{
+    background-color: $colorprincipal;
+    color: $colorfondo;
+}
+.button:hover{
+    transform: scale(1.1);
+}
+label{
+    margin-left: 15px;
+    align-self: auto;
+}
+main{
+    .formulario{
+        select{
+            .option{
+                display:flow-root;
+                position:relative;
+                margin-top: 20px;
+            }
+        }
+        .button{
+            margin-left: 40px;
+            margin-top: 15px;
+        }
+    }
+}

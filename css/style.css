@@ -1,284 +1,315 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-*{
-    margin: 0;
-    font-weight: bolder;
-    font-family: Cinzel;
-    padding: 0;
-}
-a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight:bolder;
-    font-size: small;
-}
-h1 {
-    line-height: 2.5;
-    color:rgb(0, 0, 0);
-    margin-left: 25px;
-    font-weight: 700px;
-}
-h2 {
-    line-height: 1.5;
-    margin-left: 25px;
-
-    font-size: 2vw;
-}
-.nombre{
-    width: 300px;
-    height: 70px;
-}
-.formularios{
-    background-color: rgb(175, 175, 175);
-}
-.button{
-    background-color: rgb(0, 0, 0);
-    color: white;
-}
-.button:hover{
-    transform: scale(1.1);
-}
-ul li {
-    font-size : 15px;
-}
-.encabezado div form{
-    width: 50px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 .menu {
-    background-color: black;
-    color: aliceblue;
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    height: auto;
-    position:sticky;
-    top:0;
-    z-index: 100;
-    animation-name: ingreso;
-    animation-duration: 2s;
-} 
-.menu a:hover{
-    transform: scale(1.1);
-    
-} 
-.menu li:hover{
-    transform: scale(1.1);
-} 
-section nav ul li a{
-    animation-name: ingreso_contenido;
-    animation-duration: 2s;
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation-name: ingreso;
+  animation-duration: 1s;
 }
-ul {
-    list-style: none;
-}
-section nav ul li {
-    display:inline-block;
-    font-size: 20px;
-    padding: 5px;
-    animation-name: ingreso_contenido;
-    animation-duration: 2s;
 
+.menu a:hover {
+  transform: scale(1.1);
 }
-.nombre_barra{
-    background-color: white ;
-    width: 165px;
-    margin: 15px;
-    background-size: contain;
-    height: 55px;
-    background-image: url("../assets/img/generatedtext.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 150px;
-    animation-name: ingreso_contenido;
-    animation-duration: 2s;
+
+.menu nav ul {
+  list-style: none;
 }
-section img{
-    background-color: white;
-    width: 55px;
-    border-radius: 150px;
-    height: 55px;
-    margin:15px;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation-name: ingreso_contenido;
-    animation-duration: 2s;
+
+.menu nav ul li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px;
+  animation-name: ingreso_contenido;
+  animation-duration: 1s;
+  font-size: 15px;
 }
-.encabezado form img{
-    width: 15px;
-    height: 15px;
+
+.menu nav ul li a {
+  animation-name: ingreso_contenido;
+  animation-duration: 1s;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+  font-size: small;
 }
+
+.menu nav ul li:hover {
+  transform: scale(1.1);
+}
+
+.menu .nombre_barra {
+  background-color: #fff;
+  width: 165px;
+  margin: 15px;
+  background-size: contain;
+  height: 55px;
+  background-image: url("../assets/img/generatedtext.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 150px;
+  animation-name: ingreso_contenido;
+  animation-duration: 2s;
+}
+
+.menu img {
+  background-color: #fff;
+  width: 55px;
+  border-radius: 150px;
+  height: 55px;
+  margin: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-name: ingreso_contenido;
+  animation-duration: 2s;
+}
+
+footer {
+  padding: 35px 0px 30px 25px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+footer div p {
+  padding: 0;
+  margin: 0;
+}
+
+footer div p img {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 0%;
+}
+
+footer div a {
+  color: black;
+  align-content: space-around;
+}
+
+footer div a img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0%;
+}
+
+@media (max-width: 767px) {
+  .encabezado .redes {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .encabezado .logoprincipal1 {
+    display: none;
+  }
+  .logo_principal {
+    display: none;
+  }
+}
+
 .encabezado {
-    background-color: white;
-    width: 100%;
-    height: auto;
-
+  background-color: #fff;
+  width: 100%;
+  height: auto;
 }
 
-.buscador{
-    display: inline-flex;
+.encabezado div form {
+  width: 50px;
+}
 
+.encabezado div form img {
+  width: 15px;
+  height: 15px;
 }
-.encabezado div a img{
-    width: 100px;
-    height: 100px;
+
+.encabezado div form input {
+  border-radius: 5px;
 }
-.encabezado .redes{
-    width: 50px;
-    height: 50px;
+
+.encabezado div form .formularios {
+  margin-left: 15px;
+  display: block;
 }
-body{
-    background-image: url(../img/fondo.png);
-    background-position:bottom;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-color: rgb(236, 236, 236);
-    bottom: 100px;
+
+.encabezado div a img {
+  width: 100px;
+  height: 100px;
 }
+
+.encabezado .redes {
+  width: 50px;
+  height: 50px;
+}
+
+* {
+  margin: 0;
+  font-weight: bolder;
+  font-family: Cinzel;
+  padding: 0;
+}
+
+h1 {
+  line-height: 2.5;
+  color: black;
+  padding-left: 25px;
+  font-weight: 700px;
+}
+
+h2 {
+  line-height: 1.5;
+  padding-left: 25px;
+  font-size: 2vw;
+}
+
 video {
-    margin: 25px;
-    border-radius: 15px;
-    width: 487px;
-    height: 255px;
+  margin: 25px;
+  border-radius: 15px;
+  width: 487px;
+  height: 255px;
 }
+
 img {
-    margin:25px;
-    border-radius: 15px;
+  margin: 25px;
+  border-radius: 15px;
 }
-.inicio img {
-    width: 487px;
-    height: 255px;
+
+body {
+  background-image: url(../img/fondo.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #ececec;
+  bottom: 100px;
 }
-.inicio{
-    display: flex;
-    flex-wrap: wrap;
-    align-content:space-around;
-    justify-content: center;
- }
-.inicio div{
-    width: 500px;
-    height: 340px;
+
+select {
+  display: block;
+  margin: 15px 0px 15px 15px;
 }
-.inicio div h2{
-margin-top: 100px;
-}
-.encabezado form input{
-    border-radius: 5px;
-}
-footer{
-    margin-top: 35px;
-    margin-left: 25px;
-    margin-bottom: 30px;
-}
-footer a img{
-    width: 30px;
-    height: 30px;
-    margin-bottom: 0%;
-}
-footer a{
-    color: black;
-    align-content: space-around;
-}
-footer p img{
-    width: 15px;
-    height: 15px;
-    margin-bottom: 0%;
-}
+
 iframe {
-    border-radius: 15px;
-    margin-left: 25px;
-    box-shadow: 5px 10px 10px 1px rgb(58, 56, 56);
+  border-radius: 15px;
+  margin-left: 25px;
+  box-shadow: 5px 10px 10px 1px #3a3838;
 }
-.formulario .button{
-    margin-left: 40px;
-    margin-top: 15px;
+
+.formularios {
+  background-color: #afafaf;
 }
-input.formularios{
-    margin-left: 15px;
-    display: block;
+
+.button {
+  background-color: black;
+  color: #fff;
 }
-label{
-    margin-left: 15px;
-    align-self: auto;
+
+.button:hover {
+  transform: scale(1.1);
 }
-textarea{
-    margin: 15px 0px 15px 15px;
-    display: block;
+
+label {
+  margin-left: 15px;
+  align-self: auto;
 }
-select{
-    display: block;
-    margin: 15px 0px 15px 15px;
+
+main .formulario select .option {
+  display: flow-root;
+  position: relative;
+  margin-top: 20px;
 }
-.option{
-    display:flow-root;
-    position:relative;
-    margin-top: 20px;
+
+main .formulario .button {
+  margin-left: 40px;
+  margin-top: 15px;
 }
-.concurso{
-    height: 900px;
-    width: 410px;
-    background-color: black;
-    font-size: 20px;
-    margin: 25px;
-    border-radius: 15px;
-    padding: 10px;
-    color:white;
-    box-shadow: 5px 10px 10px 1px rgb(58, 56, 56);
-}
-.texto_estilos{
-    width: 700px;
-    margin: 50px;
-}
+
 @keyframes ingreso {
-    0%{
-        height: 3000px;
-        align-items: center;
-        justify-content: center;
+  0% {
+    height: 30000px;
+    align-items: center;
+    justify-content: center;
+  }
+  25% {
+    height: 1px;
+    width: 100px;
+    transform: translate(600px, 200px);
+  }
+  50% {
+    height: 10px;
+  }
+  100% {
+    width: 100%;
+  }
+}
 
-    }
-    25%{
-        height: 10px;
-        width: 100px;
-        transform: translate(600px,200px);
-        }
-    50%{
-        height: 10px;
-    }
-    100%{
-        width: 100%;
-    }
+@keyframes ingreso_contenido {
+  0% {
+    height: 1px;
+    width: 1px;
+    color: black;
+    font-size: 0.5px;
+  }
+  50% {
+    height: 10px;
+    width: 10px;
+    color: black;
+    font-size: 0.5px;
+  }
+  75% {
+    font-size: 0.5px;
+    color: black;
+  }
+  100% {
+    color: #575454;
+  }
+}
 
+.main {
+  padding: 0;
+  margin: 0;
 }
-@keyframes ingreso_contenido{
-    0%{
-        height: 1px;
-        width: 1px;
-        color: black;
-        font-size: 0.5px;
-    }
-    50%{
-        height: 10px;
-        width: 10px;
-        color: black;
-        font-size: 0.5px;
-    }
-    75%{
-        font-size: 0.5px;
-        color: black;
-    }
-    100%{  
-        color:rgb(87, 84, 84);
-    }
+
+.main .inicio {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
 }
-@media (max-width:767px){
-    .encabezado .redes{
-        display: none;
-    }
+
+.main .inicio div {
+  width: 500px;
+  height: 340px;
 }
-@media (max-width:991px){
-    .encabezado .logoprincipal1{
-        display: none;
-    }
-    .logo_principal{
-        display:none;
-    }
+
+.main .inicio div h2 {
+  margin-top: 100px;
 }
+
+.main .texto_estilos {
+  width: 700px;
+  margin: 50px;
+}
+
+.main .concurso {
+  height: 900px;
+  width: 410px;
+  background-color: black;
+  font-size: 20px;
+  margin: 25px;
+  border-radius: 15px;
+  padding: 10px;
+  color: #fff;
+  box-shadow: 5px 10px 10px 1px #3a3838;
+}
+
+.main h1 {
+  margin-right: 0;
+}
+/*# sourceMappingURL=style.css.map */
