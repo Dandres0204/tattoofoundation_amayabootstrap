@@ -6,16 +6,16 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
-    height: 70px;
     position:sticky;
     top:0;
     z-index: 100;
     animation-name: ingreso;
     animation-duration: 1s;
 	a:hover{
-    transform: scale(1.1);   
+    transform: scale(1.1);
     }
     nav {
+        background-color: $colorprincipal;
         ul{
             list-style: none;
             li {

@@ -11,14 +11,13 @@
 </head>
 <body>
     <section class="encabezado row">
-        <div class="col-4 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
             <img src="./assets/img/generatedtext.png" class="nombre img-fluid">
         </div>
-        <div class="col-8 col-md-6 col-lg-4 col-xl-4 d-flex align-items-center justify-content-start">
-            <form action="archivo.php" method="post" class="col-4 col-md-4 col-lg-4 col-xl-4 d-flex align-items-end justify-content-start">
-                <img src="./assets/img/lupa.png" class="img-fluid">
+        <div class="buscador col-0 col-md-6 col-lg-4 col-xl-4 d-flex align-items-center justify-content-start">
+            <form action="archivo.php" method="post" class="col-0 col-md-4 col-lg-4 col-xl-4 d-flex align-items-end justify-content-basline">
                 <input class="formularios" type="search" placeholder="Busca por palabra clave">
-                <input class="button" type="submit" value="Enviar">
+                <button type="submit" value="Enviar" class="lupa border-0 bg-white m-0 align-items-end"> <img src="./assets/img/lupa.png" class="m-2" /></button>
             </form>
         </div>
             <a href="#pie de pagina" class="redes1 col-0 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center align-items-center">
@@ -30,16 +29,16 @@
             </a>
         </div>
     </section>
-    <section class="menu navbar navbar-expand-lg navbar-dark">
+    <section class="menu navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
             <a href="./index.html">
-                <div class="nombre_barra">
+                <div class="nombre_barra navbar-brand" href="#">
                 </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="collapse navbar-collapse" id="navbarText" >
+            <nav class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
                     <li class="nav-item">
                         <a href="./pages/artistas.html">Artistas</a>
@@ -57,6 +56,8 @@
                         <a href="./pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
+                <span class="navbar-text">
+                </span>
             </nav>
             <a href="./index.html" class="logo_principal">
                 <img src="./assets/img/logo.png">
@@ -84,18 +85,20 @@
         </div>
     </main>
     <footer id="pie de pagina" class="row">
-        <div class="col-12 col-md-12 col-lg-12 col-xl-12 p-0">
-            <p>Recuerde Seguirnos en todas nuestras redes sociales</p>
-            <a href="https://es-la.facebook.com/enespanol/">
-                <img src="./assets/img/icon-face.png">@TattooFoundation
-            </a>
-            <a href="https://www.instagram.com/accounts/login/">
-                <img src="./assets/img/icon_tw.png">@TattooFoundation
-            </a>
-            <a href="https://twitter.com/login?lang=es">
-                <img src="./assets/img/instagram_icon.png">@TattooFoundation
-            </a>
-            <p>
+        <div>
+            <p class="d-flex align-items-center justify-content-center">Recuerde Seguirnos en todas nuestras redes sociales</p>
+            <div class="d-flex align-items-center justify-content-center flex-column">
+                <a href="https://es-la.facebook.com/enespanol/" target="_blank">
+                    <img src="./assets/img/icon-face.png">@TattooFoundation
+                </a>
+                <a href="https://twitter.com/login?lang=es" target="_blank">
+                    <img src="./assets/img/icon_tw.png">@TattooFoundation
+                </a>
+                <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                    <img src="./assets/img/instagram_icon.png">@TattooFoundation
+                </a>
+            </div>
+            <p class="d-flex align-items-center justify-content-center">
                 <img src="./assets/img/copyright-logo.png">2022 TattooFoundation Todos los derechos reservados.
             </p>
         </div>
