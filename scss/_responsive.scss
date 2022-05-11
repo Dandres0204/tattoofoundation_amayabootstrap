@@ -3,7 +3,7 @@
         display: none;
     }
     .encabezado .buscador{
-        display: none;
+        visibility: hidden;
     }
 }
 @media (max-width:991px){

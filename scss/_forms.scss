@@ -1,12 +1,6 @@
-
-.formularios{
-    background-color: $colorform;
-}
-.button{
-    @include boton (15px,$colorprincipal,$colorletranav)
-}
 .button:hover{
     transform: scale(1.1);
+    background-color: rgb(43, 42, 42);
 }
 label{
     margin-left: 15px;

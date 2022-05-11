@@ -1,5 +1,12 @@
-@mixin boton ($bordes,$bg-color,$ft-color){
+@mixin boton ($bordes,$bg-color){
     border-radius: $bordes;
     background-color: $bg-color;
-    color: $ft-color;
+}
+.formularios{
+    @include boton(5px, $colorform)
+}
+
+.button{
+    @include boton(5px, $colorprincipal);
+    color: $colorletranav;
 }

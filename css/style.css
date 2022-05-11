@@ -31,7 +31,7 @@
   font-size: 20px;
   padding: 5px;
   animation-name: ingreso_contenido;
-  animation-duration: 1s;
+  animation-duration: 0.1s;
   font-size: 15px;
 }
 
@@ -107,7 +107,7 @@ footer div a img {
     display: none;
   }
   .encabezado .buscador {
-    display: none;
+    visibility: hidden;
   }
 }
 
@@ -167,6 +167,7 @@ h1 {
   padding-left: 25px;
   font-weight: 700px;
   line-height: normal;
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -207,17 +208,9 @@ iframe, .main .texto_estilos img {
   box-shadow: 5px 10px 10px 1px #3a3838;
 }
 
-.formularios {
-  background-color: #afafaf;
-}
-
-.button {
-  background-color: black;
-  color: #fff;
-}
-
 .button:hover {
   transform: scale(1.1);
+  background-color: #2b2a2a;
 }
 
 label {
@@ -327,5 +320,16 @@ main .formulario .button {
 
 .main h1 {
   margin-right: 0;
+}
+
+.formularios {
+  border-radius: 5px;
+  background-color: #afafaf;
+}
+
+.button {
+  border-radius: 5px;
+  background-color: black;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
