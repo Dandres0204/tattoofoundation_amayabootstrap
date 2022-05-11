@@ -3,8 +3,7 @@
     background-color: $colorform;
 }
 .button{
-    background-color: $colorprincipal;
-    color: $colorfondo;
+    @include boton (15px,$colorprincipal,$colorletranav)
 }
 .button:hover{
     transform: scale(1.1);

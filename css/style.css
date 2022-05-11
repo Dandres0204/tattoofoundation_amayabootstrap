@@ -89,7 +89,6 @@ footer div p {
 footer div p img {
   width: 15px;
   height: 15px;
-  margin-bottom: 0%;
 }
 
 footer div a {
@@ -100,7 +99,7 @@ footer div a {
 footer div a img {
   width: 30px;
   height: 30px;
-  margin-bottom: 0%;
+  vertical-align: middle;
 }
 
 @media (max-width: 767px) {
