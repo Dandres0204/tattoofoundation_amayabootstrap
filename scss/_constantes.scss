@@ -10,11 +10,12 @@ h1 {
     color: $colorprincipal;
     padding-left: 25px;
     font-weight: 700px;
+    line-height: map-get($texto, interlineado );
 }
 h2 {
     line-height: 1.5;
     padding-left: 25px;
-    font-size: 2vw;
+    font: size 20px;;
 }
 video {
     margin: 25px;

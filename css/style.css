@@ -18,6 +18,10 @@
   transform: scale(1.1);
 }
 
+.menu nav {
+  background-color: black;
+}
+
 .menu nav ul {
   list-style: none;
 }
@@ -103,6 +107,9 @@ footer div a img {
   .encabezado .redes {
     display: none;
   }
+  .encabezado .buscador {
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {
@@ -124,7 +131,7 @@ footer div a img {
   width: 50px;
 }
 
-.encabezado div form img {
+.encabezado div form button img {
   width: 15px;
   height: 15px;
 }
@@ -160,12 +167,13 @@ h1 {
   color: black;
   padding-left: 25px;
   font-weight: 700px;
+  line-height: normal;
 }
 
 h2 {
   line-height: 1.5;
   padding-left: 25px;
-  font-size: 2vw;
+  font: size 20px;
 }
 
 video {
@@ -194,7 +202,7 @@ select {
   margin: 15px 0px 15px 15px;
 }
 
-iframe {
+iframe, .main .texto_estilos img {
   border-radius: 15px;
   margin-left: 25px;
   box-shadow: 5px 10px 10px 1px #3a3838;
@@ -292,8 +300,18 @@ main .formulario .button {
 }
 
 .main .texto_estilos {
-  width: 700px;
+  width: 560px;
   margin: 50px;
+}
+
+.main .texto_estilos img {
+  height: 600px;
+  width: 500px;
+}
+
+.main .texto_estilos h5 {
+  text-align: justify;
+  line-height: normal;
 }
 
 .main .concurso {
